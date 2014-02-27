@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campusevents</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="metro">
+
+<nav class="navigation-bar fixed-top">
+    <nav class="navigation-bar-content">
+        <div>
+            <a class="element brand" href="#">PAUL EVANS</a>
+        </div>
+
+        <span class="element-divider"></span>
+
+        <span class="element-divider place-right"></span>
+        <button class="element image-button image-left place-right">
+            CIT 43600
+        </button>
+    </nav>
+</nav>
+
+<div class="container">
+	<%= yield %>
+</div>
+
+<nav class="navigation-bar fixed-bottom">
+    <nav class="navigation-bar-content">
+        <div>
+            <a class="element brand" href="#">PAUL EVANS - CIT 43600</a>
+        </div>
+
+        <span class="element-divider"></span>
+
+        <span class="element-divider place-right"></span>
+        <button class="element image-button image-left place-right">
+            Assignment 3
+        </button>
+    </nav>
+</nav>
+
+</body>
+</html>
